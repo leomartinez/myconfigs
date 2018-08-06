@@ -46,3 +46,7 @@ let perl_extended_vars=1
 ```
 
 El archivo descargado se debe renombrar a `.vimrc` 
+
+## Herramientas y ayudas
+
+Tegno desarrollada una plantilla (*template*) para los scripts de **bash**. Se puede descargar de acá [modelo_script.sh](archivos/modelo_script.sh).
