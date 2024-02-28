@@ -3,6 +3,7 @@ format = """
 [  󰇙](bg:#a3aed2 fg:#090c0c)\
 $username\
 $hostname\
+[$sudo](bg:#a3aed2 fg:#090c0c)\
 $directory\
 [](fg:#769ff0 bg:#394260)\
 $git_branch\
@@ -10,12 +11,15 @@ $git_status\
 [](fg:#394260 bg:#212736)\
 $nodejs\
 $rust\
+$ruby\
 $golang\
 $php\
+$python\
 [](fg:#212736 bg:#1d2230)\
 $time\
-$cmd_duration\
 [ ](fg:#1d2230)\
+$fill\
+$cmd_duration \
 \n$character"""
 
 [username]
@@ -85,3 +89,9 @@ format = '[[  $time ](fg:#a0a9cb bg:#1d2230)]($style)'
 [cmd_duration]
 format = '[ $duration ](fg:yellow bg:#1d2230)'
 show_milliseconds = true
+
+[sudo]
+format = '[$symbol]($style)'
+style = '(bg:#a3aed2 fg:#090c0c)'
+symbol = '🥋 '
+disabled = false
